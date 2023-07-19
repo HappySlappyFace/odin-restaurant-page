@@ -1,5 +1,6 @@
 import { createNavbar } from "./navbar";
 import { createFooter } from "./footer";
+import { createHome } from "./home";
 import "./style.css";
 const $content = document.getElementById("content");
 
@@ -14,7 +15,29 @@ function createHtmlElement(type, id, arrayClasses, content) {
 function home() {
   $content.innerHTML = "";
   createNavbar();
+  createHome();
   createFooter();
+}
+function menu() {
+  $content.innerHTML = "";
+  createNavbar();
+  createHome();
+  createFooter();
+}
+function book() {
+  $content.innerHTML = "";
+  createNavbar();
+  createHome();
+  createFooter();
+}
+function contact() {
+  $content.innerHTML = "";
+  createNavbar();
+  createHome();
+  createFooter();
+}
+function github() {
+  window.open("https://github.com/HappySlappyFace", "_blank");
 }
 
 document.addEventListener("click", (e) => {
@@ -24,6 +47,7 @@ document.addEventListener("click", (e) => {
   if (target === "Menu") menu();
   if (target === "Book") book();
   if (target === "Contact") contact();
+  if (target === "Github") github();
 });
 home();
 export { createHtmlElement, $content };
