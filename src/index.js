@@ -1,6 +1,9 @@
 import { createNavbar } from "./navbar";
 import { createFooter } from "./footer";
 import { createHome } from "./home";
+import { createMenu } from "./menu";
+import { createBook } from "./book";
+import { createContact } from "./contact";
 import "./style.css";
 const $content = document.getElementById("content");
 
@@ -21,19 +24,19 @@ function home() {
 function menu() {
   $content.innerHTML = "";
   createNavbar();
-  createHome();
+  createMenu();
   createFooter();
 }
 function book() {
   $content.innerHTML = "";
   createNavbar();
-  createHome();
+  createBook();
   createFooter();
 }
 function contact() {
   $content.innerHTML = "";
   createNavbar();
-  createHome();
+  createContact();
   createFooter();
 }
 function github() {
@@ -49,5 +52,5 @@ document.addEventListener("click", (e) => {
   if (target === "Contact") contact();
   if (target === "Github") github();
 });
-home();
+contact();
 export { createHtmlElement, $content };

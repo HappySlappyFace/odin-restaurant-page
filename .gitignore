@@ -44,6 +44,8 @@ build/Release
 
 # Dependency directories
 node_modules/
+myWork/
+bruh/
 jspm_packages/
 
 # Snowpack dependency directory (https://snowpack.dev/)
@@ -93,10 +95,12 @@ out
 
 # Nuxt.js build / generate output
 .nuxt
-dist
+myWork/
+
 
 # Gatsby files
 .cache/
+myWork/
 # Comment in the public line in if your project uses Gatsby and not Next.js
 # https://nextjs.org/blog/next-9-1#public-directory-support
 # public
