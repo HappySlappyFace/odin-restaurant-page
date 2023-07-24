@@ -52,5 +52,5 @@ document.addEventListener("click", (e) => {
   if (target === "Contact") contact();
   if (target === "Github") github();
 });
-contact();
+home();
 export { createHtmlElement, $content };
